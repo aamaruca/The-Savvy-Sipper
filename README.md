@@ -44,7 +44,7 @@ Main Page/Desktop view and mobile view:
 https://whimsical.com/the-savvy-sipper-WKZF73hCVMGyKszRFEZ5zR
 
 
-### MVP/PostMVP
+### MVP
 
 - allow users to search for items by a specific alochol
 - use an api to pull data from an api and render content onto the page
