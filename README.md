@@ -40,44 +40,38 @@ snippet:
         },
 
 ## Wireframes
+Main Page/Desktop view and mobile view:
+https://whimsical.com/the-savvy-sipper-WKZF73hCVMGyKszRFEZ5zR
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP 
-*These are examples only. Replace with your own MVP features.*
-
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+-allow users to search for items by a specific alochol
+- use an api to pull data from an api and render content onto the page
+- proivde name, picture, recipe and list of ingredients for each cocktail
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+-make recipe/ingredient lists hidden until user clicks on it
+-use sliding effect to display content
+-give recipe/ingredient section a semi-transparent gradient
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+`Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
 |May 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|May 17| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
-|May 18| Pseudocode / actual code | Incomplete
-|May 19| Initial Clickable Model  | Incomplete
-|May 20| MVP | Incomplete
+|May 17| Project Approval / Core Application Structure (HTML, CSS, etc.)/ Begin Pseudocode | Incomplete
+|May 18| Complete Pseudocode / Work on Functionality | Incomplete
+|May 19| Complete Functionality / Begin CSS/Design  | Incomplete
+|May 20| Polish CSS/ Complete MVPs | Incomplete
 |May 21| Presentations | Incomplete
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://whimsical.com/L7QbckHEB6Eexs9ird941S
 
 ## Timeframes
 
@@ -87,9 +81,22 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Psuedocode | H | 3hrs| hrs | hrs |
+| HTML build | H | 3hrs| hrs | hrs |
+| Creating axios request | H | 3hrs| hrs | hrs |
+| functionality to append names to dom | H | 3hrs| hrs | hrs |
+| functionality to append images to dom | H | 3hrs| hrs | hrs |
+| functionality to append recipe instructions | H | 3hrs| hrs | hrs |
+| functionality to append ingredients to dom | H | 3hrs| hrs | hrs |
+| function to filter data | H | 3hrs| hrs | hrs |
+| event listener functionality | H | 3hrs| hrs | hrs |
+| remove data from dom | H | 3hrs| hrs | hrs |
+| basic css | H | 3hrs| hrs | hrs |
+| felxbox manipulation | H | 3hrs| hrs | hrs |
+| polish css | H | 3hrs| hrs | hrs |
+| post mvp's | H | 3hrs| hrs | hrs |
+
+| Total | H | 39hrs| hrs | hrs |
 
 ## Code Snippet
 
