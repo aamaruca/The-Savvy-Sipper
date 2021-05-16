@@ -95,7 +95,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | felxbox manipulation | H | 3hrs| hrs | hrs |
 | polish css | H | 3hrs| hrs | hrs |
 | post mvp's | H | 3hrs| hrs | hrs |
-
 | Total | H | 39hrs| hrs | hrs |
 
 ## Code Snippet
