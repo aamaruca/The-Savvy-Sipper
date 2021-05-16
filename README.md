@@ -10,6 +10,7 @@ The Savvy Sipper will be a website where users can find recipes and ingrendients
 
 ## API and Data Sample
 I wil be using TheCocktailDB https://www.thecocktaildb.com/api.php.
+
 snippet:
 {
     "drinks": [
