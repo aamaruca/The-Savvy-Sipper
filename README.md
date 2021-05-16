@@ -46,15 +46,15 @@ https://whimsical.com/the-savvy-sipper-WKZF73hCVMGyKszRFEZ5zR
 
 ### MVP/PostMVP
 
--allow users to search for items by a specific alochol
+- allow users to search for items by a specific alochol
 - use an api to pull data from an api and render content onto the page
 - proivde name, picture, recipe and list of ingredients for each cocktail
 
 #### PostMVP  
 
--make recipe/ingredient lists hidden until user clicks on it
--use sliding effect to display content
--give recipe/ingredient section a semi-transparent gradient
+- make recipe/ingredient lists hidden until user clicks on it
+- use sliding effect to display content
+- give recipe/ingredient section a semi-transparent gradient
 
 ## Project Schedule
 
