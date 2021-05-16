@@ -6,12 +6,37 @@
 
 
 ## Project Description
-
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+The Savvy Sipper will be a website where users can find recipes and ingrendients for cocktails. They'll be able to search using type of alcohol. It's supposed to give users a simple and clean method to find delicious beverages without the hassle of seraching through a bunch of blogs or pinterest.
 
 ## API and Data Sample
-
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+I wil be using TheCocktailDB https://www.thecocktaildb.com/api.php.
+snippet:
+{
+    "drinks": [
+        {
+            "idDrink": "12093",
+            "strDrink": "Rum Sour",
+            "strDrinkAlternate": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic",
+            "strGlass": "Whiskey sour glass",
+            "strInstructions": "In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry.",
+            "strInstructionsES": null,
+            "strInstructionsDE": "In einem Shaker, der halb mit Eiswürfeln gefüllt ist, Rum, Zitronensaft und Zucker vermengen. Gut schütteln. In ein Sourglas abseihen und mit der Orangenscheibe und der Kirsche garnieren.",
+            "strInstructionsFR": null,
+            "strInstructionsIT": "In uno shaker riempito a metà con cubetti di ghiaccio, unire il rum, il succo di limone e lo zucchero. Agitare bene. Filtrare in un bicchiere sour e guarnire con la fetta d'arancia e la ciliegia.",
+            "strInstructionsZH-HANS": null,
+            "strInstructionsZH-HANT": null,
+            "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/bylfi21504886323.jpg",
+            "strIngredient1": "Light rum",
+            "strIngredient2": "Lemon juice",
+            "strIngredient3": "Sugar",
+            "strIngredient4": "Orange",
+            "strIngredient5": "Maraschino cherry",
+        },
 
 ## Wireframes
 
