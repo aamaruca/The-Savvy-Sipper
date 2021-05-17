@@ -71,7 +71,7 @@ https://whimsical.com/tss-wireframe-WKZF73hCVMGyKszRFEZ5zR
 
 ## Priority Matrix
 
-https://whimsical.com/L7QbckHEB6Eexs9ird941S
+https://whimsical.com/tss-priority-matrix-L7QbckHEB6Eexs9ird941S
 
 ## Timeframes
 
