@@ -77,7 +77,7 @@ https://whimsical.com/tss-priority-matrix-L7QbckHEB6Eexs9ird941S
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Psuedocode | H | 3hrs| hrs | hrs |
+| Psuedocode | H | 3hrs| 1hrs | hrs |
 | HTML build | H | 3hrs| hrs | hrs |
 | Creating axios request | H | 3hrs| hrs | hrs |
 | functionality to append names to dom | H | 3hrs| hrs | hrs |
