@@ -6,7 +6,7 @@ const cocktailList = document.querySelector(`.cocktail-list`)
 
 //make axios request for data console.log to check for results
 async function getCocktailData(alcohol) {
-  const url = `www.thecocktaildb.com/api/json/v1/1/search.php?s=${alcohol}`
+  const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${alcohol}`
   try {
     const response = await axios.get(url)
     console.log(response)
