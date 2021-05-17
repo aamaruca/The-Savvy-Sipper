@@ -58,7 +58,6 @@ https://whimsical.com/the-savvy-sipper-WKZF73hCVMGyKszRFEZ5zR
 
 ## Project Schedule
 
-`Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
