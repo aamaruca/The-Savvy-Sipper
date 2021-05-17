@@ -43,8 +43,7 @@ snippet:
 
 ## Wireframes
 Main Page/Desktop view and mobile view:
-https://whimsical.com/the-savvy-sipper-WKZF73hCVMGyKszRFEZ5zR
-
+https://whimsical.com/tss-wireframe-WKZF73hCVMGyKszRFEZ5zR
 
 ### MVP
 
