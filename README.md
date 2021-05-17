@@ -12,6 +12,7 @@ The Savvy Sipper will be a website where users can find recipes and ingrendients
 I wil be using TheCocktailDB https://www.thecocktaildb.com/api.php.
 
 snippet:
+```
 {
     "drinks": [
         {
@@ -37,7 +38,8 @@ snippet:
             "strIngredient3": "Sugar",
             "strIngredient4": "Orange",
             "strIngredient5": "Maraschino cherry",
-        },
+        }
+```
 
 ## Wireframes
 Main Page/Desktop view and mobile view:
