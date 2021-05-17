@@ -1,18 +1,18 @@
 
-const DOMAIN = 'www.thecocktaildb.com'
-const BASE_URL = `${DOMAIN}/api/json/v1/1/search.php?`
+// const DOMAIN = 'www.thecocktaildb.com'
+// const BASE_URL = `${DOMAIN}/api/json/v1/1/search.php?`
 //globally grab area where data will be rendered
-// const cocktailList = document.querySelector(`.cocktail-list`)
+const cocktailList = document.querySelector(`.cocktail-list`)
 
 //make axios request for data console.log to check for results
 async function getCocktailData(alcohol) {
-  const url = `${BASE_URL}s=${alcohol}`
+  const url = `www.thecocktaildb.com/api/json/v1/1/search.php?s=${alcohol}`
   try {
     const response = await axios.get(url)
     console.log(response)
-    // const returnedData = response.data
-    // console.log(returnedData)
-// call renderList from eventListener and pass it to axios
+    const returnedData = response.data
+    console.log(returnedData)
+    // call renderList from eventListener and pass it to axios
     // renderList(returnedData)
   } catch (error) {
     console.error(error)
@@ -92,19 +92,18 @@ async function getCocktailData(alcohol) {
 
 
 //EVENTLISTENER
-//create vari for button id
-// const send = document.querySelector(`#send`)
-// //used button vari to add click event listenter with anonomous func
-// send.addEventListener('click', () => {
-// //grab area where user inputs request value with id
-//   const inputValue = document.querySelector("#blank")
-// //created a vari to store the value of the input field
-//   const userInput = inputValue.value
-// //when new input is recived from api remove old data
-
-// //call func
-// getCocktailData(userInput)
-// })
+// create vari for button id
+const send = document.querySelector(`#send`)
+//used button vari to add click event listenter with anonomous func
+send.addEventListener('click', () => {
+//grab area where user inputs request value with id
+  const inputValue = document.querySelector("#blank")
+//created a vari to store the value of the input field
+  const userInput = inputValue.value
+//when new input is recived from api remove old data
+//call func
+getCocktailData(userInput)
+})
 
 
 //REMOVE OLD DATA
