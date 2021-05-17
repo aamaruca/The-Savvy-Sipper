@@ -46,7 +46,7 @@ https://whimsical.com/the-savvy-sipper-WKZF73hCVMGyKszRFEZ5zR
 
 ### MVP
 
-- allow users to search for items by a specific alochol
+- allow users to search for recipes by a specific alochol either with search button or dropdown menu.
 - use an api to pull data from an api and render content onto the page
 - proivde name, picture, recipe and list of ingredients for each cocktail
 
