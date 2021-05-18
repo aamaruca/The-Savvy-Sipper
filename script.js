@@ -33,41 +33,54 @@ function renderList(data) {
 
     //RETRIEVE COCKTAIL NAME (strDrink):
     //create vari to store cocktail name data from array object retreived from api
-    let cocktailName = cocktail.strDrink
+    const cocktailName = cocktail.strDrink
     console.log(cocktailName)
-    //create loop to go over each object within the data obeject and return strDrink value
-  
-    
-  
-    //create  vari that makes a p tag element to store name data collected
+    //create  vari that makes a h3 tag element to store name data collected
     let nameTag = document.createElement("h3");
     // put data from array collected into created h3 tag
     nameTag.textContent = `${cocktailName}`
     //move data to the dom
     cocktailDiv.append(nameTag)
-    console.log(nameTag)
+    // console.log(nameTag)
 
     //RETRIEVE IMAGE(strDrinkThumb):
-
-    //create an img element stored in a vari
-    //move newly created tag into div created previously for holding data
-
-    //add a class name to above tag
-
     //create a vari to store image data in
+    const drinkPic = cocktail.strDrinkThumb 
+    //create an img element stored in a vari
+    const imageTag = document.createElement('img')
+    //move newly created tag into div created previously for holding data
+    cocktailDiv.append(imageTag)
+    // console.log(imageTag)
+    //add a class name to above tag
+    imageTag.classList.add("drink-thumb")
+     //set imageTag with proper attributes ('src' , data path)
+    imageTag.setAttribute('src', cocktail.strDrinkThumb)
 
-    //set imageTag with proper attributes ('src' , data path)
 
     //RETIREVE INGREDENTS(strIngredient):
     //create vari for ingredient data
-
+    
+    const ingredients = cocktail.strIngredient
+    // console.log(ingredients)
+    for (const i in cocktail) {
+      if (i.substring(0-6 === 'strIngredient')) {
+        return ingredients
+      }
+    }
+        
+    
+  
+      
+    
     //filter data for null values
 
     //create a tag to store data in
-
-    //insert data collected into above tag
-
+    const ingredientTag = document.createElement('p')
+    //create class list for ingredients and measurements for above tag
+    ingredientTag.classList.add ("recipe")
+    cocktailDiv.append(ingredientTag)
     //move data to dom
+    ingredientTag.textContent = `Ingredients: ${ingredients}`
 
     //RETIREVE MEASUREMENTS(strMeasure):
     //create vari for ingredient data
