@@ -61,17 +61,22 @@ function renderList(data) {
     //create vari for ingredient data
     
     const ingredients = cocktail.strIngredient
-    // console.log(ingredients)
-    for (const i in cocktail) {
+    // // console.log(ingredients)
+    // for (const strIngredient in cocktail) {
+    //   if (Object.hasOwnProperty.call(cocktail, strIngredient[""])) {
+    //     const ingredients = cocktail[strIngredient(0-6)];
+    //     console.log(ingredients)
+    //   }
+    // }
+    for (i in cocktail) {
       if (i.substring(0 - 6 === 'string')) {
-        return ingredients()
+        
       }
     }
-    
-  
-      
-    
-    //filter data for null values
+
+
+    //if else conditional if keys = ingredient than return 
+    // and filter data for null values
 
     //create a tag to store data in
     const ingredientTag = document.createElement('p')
