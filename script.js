@@ -105,9 +105,17 @@ send.addEventListener("submit", (e) => {
   //created a vari to store the value of the input field
   const userInput = inputValue.value;
   //when new input is recived from api remove old data
+  removeData()
   //call func
   getCocktailData(userInput)
 });
 
+//change to drop down menu or create a user validation func to insure that input is not empty when send button is clicked
+
 //REMOVE OLD DATA
 //write a function to remove old data before new data is rendered
+function removeData() {
+  while (cocktailList.lastChild) {
+    cocktailList.removeChild(cocktailList.lastChild)
+  }
+}
