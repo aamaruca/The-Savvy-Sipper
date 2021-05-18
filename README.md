@@ -79,13 +79,13 @@ https://whimsical.com/tss-priority-matrix-L7QbckHEB6Eexs9ird941S
 | --- | :---: |  :---: | :---: | :---: |
 | Psuedocode | H | 3hrs| 30min | 30min |
 | HTML build | H | 3hrs| 30min | 30min |
-| Creating axios request | H | 3hrs| hrs | hrs |
+| Creating axios request | H | 3hrs| 3hrs | 3hrs |
 | functionality to append names to dom | H | 3hrs| hrs | hrs |
 | functionality to append images to dom | H | 3hrs| hrs | hrs |
 | functionality to append recipe instructions | H | 3hrs| hrs | hrs |
 | functionality to append ingredients to dom | H | 3hrs| hrs | hrs |
 | function to filter data | H | 3hrs| hrs | hrs |
-| event listener functionality | H | 3hrs| hrs | hrs |
+| event listener functionality | 3H | 30min| 30min | hrs |
 | remove data from dom | H | 3hrs| hrs | hrs |
 | basic css | H | 3hrs| hrs | hrs |
 | felxbox manipulation | H | 3hrs| hrs | hrs |
