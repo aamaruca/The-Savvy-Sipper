@@ -63,11 +63,10 @@ function renderList(data) {
     const ingredients = cocktail.strIngredient
     // console.log(ingredients)
     for (const i in cocktail) {
-      if (i.substring(0-6 === 'strIngredient')) {
-        return ingredients
+      if (i.substring(0 - 6 === 'string')) {
+        return ingredients()
       }
     }
-        
     
   
       
