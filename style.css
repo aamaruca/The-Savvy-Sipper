@@ -1,5 +1,8 @@
 body {
-  background-color: #00485b;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1b3308;
   color: #ebfbab;
   text-align: center;
 }
@@ -27,16 +30,24 @@ header > img {
 #left-image {
   transform: scaleX(-1);
 }
-.intro {
-  text-align: center; 
-  max-width: 500px
+.intro > p {
+  display: flex;
+  justify-content: center; 
+  margin: 5% 15%;
+
 }
-
-
+img {
+  display: flex;
+  justify-content: center;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 20px;
+}
 .drink-thumb {
   display: flex;
-  height: 200px;
-  width: 200px;
+  justify-content: center;
+  /* height: 200px; */
+  /* width: 200px; */
 }
 
 @media only screen and (min-width: 800px) {
@@ -49,14 +60,19 @@ header > img {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #de5090;
-    font-size: 25px;
+    font-size: 20px;
+  }
+  header > h1 {
+    padding-top: 25px;
   }
   header > img {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
   }
 }
-
+@media only screen and {
+  
+}
 
 
 
