@@ -34,14 +34,19 @@ header > img {
   display: flex;
   justify-content: center; 
   margin: 5% 15%;
-
 }
+
 img {
   display: flex;
   justify-content: center;
   max-height: 200px;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 25px;
+}
+.cocktail-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .drink-thumb {
   display: flex;
