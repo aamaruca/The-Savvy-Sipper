@@ -34,7 +34,7 @@ function renderList(data) {
     //RETRIEVE COCKTAIL NAME (strDrink):
     //create vari to store cocktail name data from array object retreived from api
     const cocktailName = cocktail.strDrink;
-    console.log(cocktailName);
+    // console.log(cocktailName);
     //create  vari that makes a h3 tag element to store name data collected
     let nameTag = document.createElement("h3");
     // put data from array collected into created h3 tag
@@ -56,20 +56,13 @@ function renderList(data) {
     //set imageTag with proper attributes ('src' , data path)
     imageTag.setAttribute("src", cocktail.strDrinkThumb);
 
-    //RETIREVE INGREDENTS(strIngredient):
+    //RETIREVE INGREDENTS/MEASUREMENTS:
     //create vari for ingredient data
-
-    // const ingredients = cocktail.strIngredient
-    // // console.log(ingredients)
-    // for (const strIngredient in cocktail) {
-    //   if (Object.hasOwnProperty.call(cocktail, strIngredient[""])) {
-    //     const ingredients = cocktail[strIngredient(0-6)];
-    //     console.log(ingredients)
-    //   }
-    // }
-    //if else conditional if keys = ingredient than return
     const sectionIng = document.createElement('div')
+    sectionIng.classList.add('ingredients')
+    //create vari for measurement data
     const sectionMea = document.createElement('div')
+    sectionMea.classList.add('measurements')
     for (i in cocktail) {
       if (i.substring(0, 6) === "strIng") {
         if (cocktail[i] !== null) {
@@ -79,45 +72,33 @@ function renderList(data) {
         }
       }
     }
-    
     for (i in cocktail) {
       if (i.substring(0, 6) === "strMea") {
+        //filter data for null values
         if (cocktail[i] !== null) {
+          //create a tag to store data in
           const recipeTag = document.createElement("p");
+          //insert data collected into above tag
           recipeTag.textContent = `${cocktail[i]}`
+          //move data to dom
           sectionMea.append(recipeTag);
         }
       }
     }
-    cocktailDiv.append(sectionIng)
-    cocktailDiv.append(sectionMea)
+    cocktailDiv.appendChild(sectionIng)
+    cocktailDiv.appendChild(sectionMea)
     
-    
-  
-  
-    //RETIREVE MEASUREMENTS(strMeasure):
-    //create vari for ingredient data
-
-    //filter data for null values
-
-    //create a tag to store data in
-
-    //insert data collected into above tag
-
-    //move data to dom
-
     //RETIREVE INSTRUCTIONS(strInstructions):
-    //create vari for ingredient data
-
+    //create vari for instruction data
+    const instructions = cocktail.strInstructions
     //filter data for null and other lang values
-
     //create a tag to store data in
-
+    const instructionTag = document.createElement('p')
     //insert data collected into above tag
-
+    instructionTag.textContent = `Instructions: ${cocktail.strInstructions}`
     //move data to dom
+    cocktailDiv.append(instructionTag)
   });
-  // console.log(renderList)
 }
 
 //EVENTLISTENER
