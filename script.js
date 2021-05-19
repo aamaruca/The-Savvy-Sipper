@@ -33,34 +33,33 @@ function renderList(data) {
 
     //RETRIEVE COCKTAIL NAME (strDrink):
     //create vari to store cocktail name data from array object retreived from api
-    const cocktailName = cocktail.strDrink
-    console.log(cocktailName)
+    const cocktailName = cocktail.strDrink;
+    console.log(cocktailName);
     //create  vari that makes a h3 tag element to store name data collected
     let nameTag = document.createElement("h3");
     // put data from array collected into created h3 tag
-    nameTag.textContent = `${cocktailName}`
+    nameTag.textContent = `${cocktailName}`;
     //move data to the dom
-    cocktailDiv.append(nameTag)
+    cocktailDiv.append(nameTag);
     // console.log(nameTag)
 
     //RETRIEVE IMAGE(strDrinkThumb):
     //create a vari to store image data in
-    const drinkPic = cocktail.strDrinkThumb 
+    const drinkPic = cocktail.strDrinkThumb;
     //create an img element stored in a vari
-    const imageTag = document.createElement('img')
+    const imageTag = document.createElement("img");
     //move newly created tag into div created previously for holding data
-    cocktailDiv.append(imageTag)
+    cocktailDiv.append(imageTag);
     // console.log(imageTag)
     //add a class name to above tag
-    imageTag.classList.add("drink-thumb")
-     //set imageTag with proper attributes ('src' , data path)
-    imageTag.setAttribute('src', cocktail.strDrinkThumb)
-
+    imageTag.classList.add("drink-thumb");
+    //set imageTag with proper attributes ('src' , data path)
+    imageTag.setAttribute("src", cocktail.strDrinkThumb);
 
     //RETIREVE INGREDENTS(strIngredient):
     //create vari for ingredient data
-    
-    const ingredients = cocktail.strIngredient
+
+    // const ingredients = cocktail.strIngredient
     // // console.log(ingredients)
     // for (const strIngredient in cocktail) {
     //   if (Object.hasOwnProperty.call(cocktail, strIngredient[""])) {
@@ -68,24 +67,34 @@ function renderList(data) {
     //     console.log(ingredients)
     //   }
     // }
+    //if else conditional if keys = ingredient than return
+    const sectionIng = document.createElement('div')
+    const sectionMea = document.createElement('div')
     for (i in cocktail) {
-      if (i.substring(0 - 6 === 'string')) {
-        
+      if (i.substring(0, 6) === "strIng") {
+        if (cocktail[i] !== null) {
+          const recipeTag = document.createElement("p");
+          recipeTag.textContent = `${cocktail[i]}`
+          sectionIng.append(recipeTag);
+        }
       }
     }
-
-
-    //if else conditional if keys = ingredient than return 
-    // and filter data for null values
-
-    //create a tag to store data in
-    const ingredientTag = document.createElement('p')
-    //create class list for ingredients and measurements for above tag
-    ingredientTag.classList.add ("recipe")
-    cocktailDiv.append(ingredientTag)
-    //move data to dom
-    ingredientTag.textContent = `Ingredients: ${ingredients}`
-
+    
+    for (i in cocktail) {
+      if (i.substring(0, 6) === "strMea") {
+        if (cocktail[i] !== null) {
+          const recipeTag = document.createElement("p");
+          recipeTag.textContent = `${cocktail[i]}`
+          sectionMea.append(recipeTag);
+        }
+      }
+    }
+    cocktailDiv.append(sectionIng)
+    cocktailDiv.append(sectionMea)
+    
+    
+  
+  
     //RETIREVE MEASUREMENTS(strMeasure):
     //create vari for ingredient data
 
@@ -116,15 +125,15 @@ function renderList(data) {
 const send = document.querySelector(`form`);
 //used button vari to add click event listenter with anonomous func
 send.addEventListener("submit", (e) => {
-  e.preventDefault()
+  e.preventDefault();
   //grab area where user inputs request value with id
   const inputValue = document.querySelector("#blank");
   //created a vari to store the value of the input field
   const userInput = inputValue.value;
   //when new input is recived from api remove old data
-  removeData()
+  removeData();
   //call func
-  getCocktailData(userInput)
+  getCocktailData(userInput);
 });
 
 //change to drop down menu or create a user validation func to insure that input is not empty when send button is clicked
@@ -133,6 +142,6 @@ send.addEventListener("submit", (e) => {
 //write a function to remove old data before new data is rendered
 function removeData() {
   while (cocktailList.lastChild) {
-    cocktailList.removeChild(cocktailList.lastChild)
+    cocktailList.removeChild(cocktailList.lastChild);
   }
 }
