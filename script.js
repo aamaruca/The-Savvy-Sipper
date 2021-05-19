@@ -91,11 +91,12 @@ function renderList(data) {
     //RETIREVE INSTRUCTIONS(strInstructions):
     //create vari for instruction data
     const instructions = cocktail.strInstructions
+
     //filter data for null and other lang values
     //create a tag to store data in
     const instructionTag = document.createElement('p')
     //insert data collected into above tag
-    instructionTag.textContent = `Instructions: ${cocktail.strInstructions}`
+    instructionTag.textContent = `Instructions: ${instructions}`
     //move data to dom
     cocktailDiv.append(instructionTag)
   });
