@@ -58,6 +58,7 @@ function renderList(data) {
 
     //RETIREVE INGREDENTS/MEASUREMENTS:
     //create vari for ingredient data
+    const recipeWraper = document.createElement('div')
     const sectionIng = document.createElement('div')
     sectionIng.classList.add('ingredients')
     //create vari for measurement data
@@ -69,6 +70,7 @@ function renderList(data) {
           const recipeTag = document.createElement("p");
           recipeTag.textContent = `${cocktail[i]}`
           sectionIng.append(recipeTag);
+          // recipeWraper.append(recipeTag)
         }
       }
     }
@@ -82,6 +84,7 @@ function renderList(data) {
           recipeTag.textContent = `${cocktail[i]}`
           //move data to dom
           sectionMea.append(recipeTag);
+          // recipeWraper.append(recipeTag)
         }
       }
     }
