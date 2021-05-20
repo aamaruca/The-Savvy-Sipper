@@ -31,33 +31,30 @@ header > img {
 #left-image {
   transform: scaleX(-1);
 }
-p {
+
+#intro-img {
+  height: 300px;
+  width: 225px;
   margin: auto;
+  border: 10px dotted #7f56c2;
+  border-radius: 50%;
 }
 .intro {
   display: flex;
-  flex-direction: row;
-justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .intro > p {
   display: flex;
   justify-content: center; 
   margin: 5% 15%;
 }
-
-img {
-  display: flex;
-  justify-content: center;
-  max-height: 200px;
-  object-fit: contain;
- 
-}
 .cocktail-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.drink-thumb > img {
+.drink-thumb {
   max-height: 200px;
   object-fit: contain;
   border-radius: 25px;
@@ -68,7 +65,6 @@ img {
 @media only screen and (min-width: 800px) {
   body {
     position: relative;
-    
   }
   header {
     display: flex;
@@ -85,7 +81,7 @@ img {
     width: 125px;
   }
 }
-@media only screen and  (min-width: 540px) {
+@media only screen and  (min-width: 488px) {
   header > h1 {
     padding-top: 20px;
   }
