@@ -8,7 +8,7 @@ body {
 }
 header {
   border: 10px solid #7f56c2;
-  border-style: inset;
+  border-style: outset;
   padding: 10px;
   margin: 20px auto;
   max-width: 650px;
@@ -18,6 +18,8 @@ header {
 }
 header > h1 {
   color: #c4d621;
+  font-family: 'Reggae One', cursive;
+  font-size: 35px;
   text-align: center;
 }
 header > img {
@@ -29,7 +31,6 @@ header > img {
 #left-image {
   transform: scaleX(-1);
 }
-
 .intro {
   display: flex;
   flex-direction: column;
@@ -37,8 +38,8 @@ header > img {
   margin: auto;
 }
 #intro-img {
-  height: 300px;
-  width: 225px;
+  height:350px;
+  width: 240px;
   margin: auto;
   border: 10px dotted #7f56c2;
   border-radius: 50%;
@@ -46,33 +47,34 @@ header > img {
 .intro > p {
   display: flex;
   justify-content: center; 
-  color: #ecf3ab;
-  background-color: #7f56c2;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  background-color: #ecf3ab;
   margin: 40px;
   padding: 30px;
-  border: 5px solid #0bac3b;
+  border: 5px double #0bac3b;
 }
 .cocktail-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
+}
+h2 {
+  font-family:'Reggae One', cursive;
+  font-size: 30px;
 }
 .cocktail-content > h3 {
-  order:-1
+  font-family: 'Reggae One', cursive;
+  font-size: 20px;
+  order:-1;
 }
 .cocktail-content > img {
-  max-height: 200px;
-  object-fit: contain;
-  border-radius: 20px;
+  max-height: 300px;
+  border: 5px solid black;
+  border-radius: 20%;
+  margin: auto;
   order: 0;
-}
-.cocktail-content > .measurements, .ingredients{
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: space-evenly;
-  flex-flow: row-wrap;
-  ;
 }
 .cocktail-content > .measurements {
   order: 1;
@@ -81,7 +83,22 @@ header > img {
   order: 2;
 }
 .cocktail-content > p {
-  order: 3;
+  order: 3; 
+}
+.ingredMeas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ingredMeas, .instructions  {
+  background-color: black;
+  background:radial-gradient();
+  border: 5px solid #7f56c2;
+  border-radius: 20%;
+  font-family: 'Raleway', sans-serif;
+  color: #ecf3ab;
+  width: 300px;
+  margin: auto;
 }
 
 @media only screen and (min-width: 800px) {
@@ -102,29 +119,24 @@ header > img {
     height: 125px;
     width: 125px;
   }
-
-  .intro {
+  .intro  {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 350px;
+    height: 425px;
     width: 700px;
+    padding: 20px;
   }
 }
-@media only screen and  (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .intro {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  
-  
+  }
 }
-
 @media only screen and  (min-width: 488px) {
   header > h1 {
     padding-top: 20px;
   }
 }
-
-
-

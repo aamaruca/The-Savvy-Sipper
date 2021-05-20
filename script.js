@@ -58,7 +58,10 @@ function renderList(data) {
 
     //RETIREVE INGREDENTS/MEASUREMENTS:
     //create vari for ingredient data
-    const recipeWraper = document.createElement('div')
+    const recipeWraper = document.createElement('section')
+    cocktailDiv.append(recipeWraper)
+    recipeWraper.classList.add('ingredMeas')
+
     const sectionIng = document.createElement('div')
     sectionIng.classList.add('ingredients')
     //create vari for measurement data
@@ -70,7 +73,6 @@ function renderList(data) {
           const recipeTag = document.createElement("p");
           recipeTag.textContent = `${cocktail[i]}`
           sectionIng.append(recipeTag);
-          // recipeWraper.append(recipeTag)
         }
       }
     }
@@ -84,25 +86,29 @@ function renderList(data) {
           recipeTag.textContent = `${cocktail[i]}`
           //move data to dom
           sectionMea.append(recipeTag);
-          // recipeWraper.append(recipeTag)
+          
         }
       }
     }
-    cocktailDiv.appendChild(sectionIng)
-    cocktailDiv.appendChild(sectionMea)
+    recipeWraper.appendChild(sectionIng)
+    recipeWraper.appendChild(sectionMea)
     
     //RETIREVE INSTRUCTIONS(strInstructions):
     //create vari for instruction data
-    const instructions = cocktail.strInstructions
+    const instructionSec = document.createElement('div')
+    cocktailDiv.append(instructionSec)
+    instructionSec.classList.add('instructions')
 
+    const instructions = cocktail.strInstructions
     //filter data for null and other lang values
     //create a tag to store data in
     const instructionTag = document.createElement('p')
     //insert data collected into above tag
-    instructionTag.textContent = `Instructions: ${instructions}`
+    instructionTag.textContent = `INSTRUCTIONS: ${instructions}`
     //move data to dom
-    cocktailDiv.append(instructionTag)
+    instructionSec.append(instructionTag)
   });
+  
 }
 
 //EVENTLISTENER
