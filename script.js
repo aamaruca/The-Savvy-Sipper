@@ -108,8 +108,17 @@ function renderList(data) {
     //move data to dom
     instructionSec.append(instructionTag)
   });
-  
 }
+
+// function hideRecipe() {
+//   allRecipe = document.getElementsByClassName('ingredMeas')
+//   if (allRecipe.style.display === "none") {
+//       allRecipe.style.display === "block"
+//   } else {
+//     allRecipe.style.display = "none"
+//     }
+// }
+// hideRecipe()
 
 //EVENTLISTENER
 // create vari for button id

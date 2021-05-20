@@ -47,7 +47,7 @@ header > img {
 .intro > p {
   display: flex;
   justify-content: center; 
-  color: black;
+  color: #1c2657;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   background-color: #ecf3ab;
@@ -59,6 +59,7 @@ header > img {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: #c4d621;
 }
 h2 {
   font-family:'Reggae One', cursive;
@@ -66,12 +67,13 @@ h2 {
 }
 .cocktail-content > h3 {
   font-family: 'Reggae One', cursive;
-  font-size: 20px;
+  font-size: 25px;
+  text-decoration: underline;
   order:-1;
 }
 .cocktail-content > img {
   max-height: 300px;
-  border: 5px solid black;
+  border: 5px solid #2e3d8a;
   border-radius: 20%;
   margin: auto;
   order: 0;
@@ -91,11 +93,11 @@ h2 {
   justify-content: center;
 }
 .ingredMeas, .instructions  {
-  background-color: black;
-  background:radial-gradient();
+  background:radial-gradient(#7f56c2,#1c2657);
   border: 5px solid #7f56c2;
   border-radius: 20%;
   font-family: 'Raleway', sans-serif;
+  font-size: 18px;
   color: #ecf3ab;
   width: 300px;
   margin: auto;
@@ -126,6 +128,10 @@ h2 {
     height: 425px;
     width: 700px;
     padding: 20px;
+  }
+  .cocktail-content {
+    display: flex;
+    flex-flow: row;
   }
 }
 @media only screen and (min-width: 600px) {
