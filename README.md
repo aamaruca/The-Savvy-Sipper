@@ -87,11 +87,11 @@ https://whimsical.com/tss-priority-matrix-L7QbckHEB6Eexs9ird941S
 | function to filter data | H | 3hrs| 30min | 30minhrs |
 | event listener functionality | 3H | 30min| 30min | hrs |
 | remove data from dom | H | 3hrs| 30min | 30min |
-| basic css | H | 3hrs| 3hrs | 3hrs |
-| felxbox manipulation | H | 3hrs| 3hrs | 3hrs |
+| basic css | H | 3hrs| 3hrs | 4hrs |
+| felxbox manipulation | H | 3hrs| 4hrs | 3hrs |
 | polish css | H | 3hrs| 3hrs | 3hrs |
 | post mvp's | H | 3hrs| 3hrs | 3hrs |
-| Total | H | 39hrs| hrs | hrs |
+| Total | H | 39hrs| 29.5hrs | 29.5hrs |
 
 ## Code Snippet
 
