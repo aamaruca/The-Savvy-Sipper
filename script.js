@@ -1,16 +1,13 @@
 //globally grab area where data will be rendered
-// if (typeof window === 'object') {
 const cocktailList = document.querySelector(`.cocktail-list`);
-// }
+
 //make axios request for data console.log to check for results
+// call renderList from eventListener and pass it to axios
 async function getCocktailData(input) {
   const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${input}`;
   try {
     const response = await axios.get(url);
-    //console.log(response)
     const returnedData = response.data.drinks;
-    //console.log(returnedData)
-    // call renderList from eventListener and pass it to axios
     renderList(returnedData);
   } catch (error) {
     console.error(error);
@@ -18,30 +15,25 @@ async function getCocktailData(input) {
 }
 
 // DATA
-// write a func called renderList that forEach cocktail object recieved the name, recipe, ingredents, measurements are taken and appened to DOM
+// write a func called renderList that forEach cocktail object recieved the name, recipe, ingredents, measurements are taken give an element to hold it in and appened to DOM
 function renderList(data) {
-  console.log(data);
   //identify ojects in array with paramenter(aka give it a name)
   data.forEach((cocktail) => {
-    //create div to hold all data (data.content) from api
     const cocktailDiv = document.createElement("div");
-    //add a class list to above div
     cocktailDiv.classList.add("cocktail-content");
-    //add newly created div to dom
     cocktailList.append(cocktailDiv);
-    // console.log(cocktail);
+
 
     //RETRIEVE COCKTAIL NAME (strDrink):
     //create vari to store cocktail name data from array object retreived from api
     const cocktailName = cocktail.strDrink;
-    // console.log(cocktailName);
     //create  vari that makes a h3 tag element to store name data collected
     let nameTag = document.createElement("h3");
     // put data from array collected into created h3 tag
     nameTag.textContent = `${cocktailName}`;
     //move data to the dom
     cocktailDiv.append(nameTag);
-    // console.log(nameTag)
+    
 
     //RETRIEVE IMAGE(strDrinkThumb):
     //create a vari to store image data in
@@ -107,9 +99,11 @@ function renderList(data) {
     instructionTag.textContent = `INSTRUCTIONS: ${instructions}`
     //move data to dom
     instructionSec.append(instructionTag)
+    // instructionSec.append(recipeWraper)
+    // recipeWraper.appendChild(instructionSec)
   });
-  
 }
+
 
 //EVENTLISTENER
 // create vari for button id
