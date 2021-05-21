@@ -2,7 +2,7 @@
 # Project Overview
 
 ## The Savvy Sipper
-
+[deployed link](https://aamaruca.github.io/The-Sssavvy-Sssipper/)
 
 
 ## Project Description
@@ -87,10 +87,10 @@ https://whimsical.com/tss-priority-matrix-L7QbckHEB6Eexs9ird941S
 | function to filter data | H | 3hrs| 30min | 30minhrs |
 | event listener functionality | 3H | 30min| 30min | hrs |
 | remove data from dom | H | 3hrs| 30min | 30min |
-| basic css | H | 3hrs| hrs | hrs |
-| felxbox manipulation | H | 3hrs| hrs | hrs |
-| polish css | H | 3hrs| hrs | hrs |
-| post mvp's | H | 3hrs| hrs | hrs |
+| basic css | H | 3hrs| 3hrs | 3hrs |
+| felxbox manipulation | H | 3hrs| 3hrs | 3hrs |
+| polish css | H | 3hrs| 3hrs | 3hrs |
+| post mvp's | H | 3hrs| 3hrs | 3hrs |
 | Total | H | 39hrs| hrs | hrs |
 
 ## Code Snippet
