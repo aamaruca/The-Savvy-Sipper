@@ -94,16 +94,17 @@ h2 {
 .cocktail-content > .ingredients {
   order: 2;
 }
-.cocktail-content > p {
+.cocktail-content > .recipe {
   order: 3; 
 }
 .ingredMeas {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   justify-content: space-evenly;
 }
-.ingredMeas, .instructions {
-  display: none;
+
+.ingredMeas, #recipe {
   background:radial-gradient(#7f56c2,#1c2657);
   border: 5px solid #7f56c2;
   border-radius: 20%;
@@ -114,11 +115,7 @@ h2 {
   width: 300px;
   margin: auto;
 }
-.drink-thumb:hover + .ingredMeas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-} 
+
 
 @media only screen and (min-width: 800px) {
   body {
